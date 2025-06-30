@@ -1,0 +1,8 @@
+@use '../helpers/' as *;
+
+
+.header {
+  &__promo {
+    padding-block: rem(20);
+  }
+}

@@ -96,7 +96,7 @@ a {
   color: inherit;
 
   @include hover {
-    color: avr(--color-accent);
+    color: var(--color-accent);
   }
 
   &[class] {
@@ -104,7 +104,7 @@ a {
   }
 
   :focus-visible {
-    uotline: rem(2) dashed var(--color-light);
+    outline: rem(2) dashed var(--color-light);
     outline-offset: rem(4);
     transition-duration: 0s !important; // Отключаем переходы для фокуса
   }
