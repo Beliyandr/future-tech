@@ -11,7 +11,7 @@
     <script src="./scripts/main.js" type="module" defer></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-js-header>
       <div class="header__promo">
         <div class="header__promo-inner container">
           <a href="#" class="header__promo-link">
@@ -32,7 +32,7 @@
               height="50"
             />
           </a>
-          <div class="header__overlay">
+          <div class="header__overlay" data-js-header-overlay>
             <nav class="header__menu">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
@@ -55,6 +55,7 @@
           </div>
           <button
             class="header__burger-button burger-button visible-mobile"
+            data-js-header-burger-button
             type="button"
             title="Open menu"
             aria-label="Opene menu"
@@ -66,7 +67,15 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+
+    <main class="main">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+      voluptatem iure praesentium itaque ipsum exercitationem blanditiis
+      expedita sint sit iste labore voluptatibus dolorum ea iusto vero,
+      reprehenderit tempore repudiandae perspiciatis.
+    </main>
+    <footer class="footer">
+      <h1>Footer</h1>
+    </footer>
   </body>
 </html>
