@@ -1,1 +1,24 @@
 @use '../helpers/' as *;
+
+.team {
+  --personImageSize: #{rem(60)};
+
+  display: flex;
+  padding: rem(10);
+  background-color: var(--color-dark-10);
+  border-radius: rem(100);
+
+  &__person {
+    width: var(--personImageSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-dark-15);
+    border: rem(2) solid var(--color-dark-40);
+
+    &:not(:first-child) {
+      margin-left: calc(var(--personImageSize) / 4 * -1);
+    }
+  }
+}
