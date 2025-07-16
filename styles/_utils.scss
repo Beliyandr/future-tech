@@ -28,7 +28,7 @@
   &::before,
   &::after {
     position: absolute;
-    width: calc((100vw - var(--container-width))) / 2;
+    width: calc((100vw - var(--container-width)) / 2);
     height: rem(1);
     background-color: var(--color-dark-15);
   }
@@ -36,22 +36,14 @@
   &--top {
     &::before {
       content: '';
-      top: 100%;
+      bottom: 100%;
     }
   }
 
   &--bottom {
     &::after {
       content: '';
-      bottom: 100%;
-    }
-  }
-
-  &--right {
-
-    &::before,
-    &::after {
-      left: 100%;
+      top: 100%;
     }
   }
 
@@ -63,4 +55,11 @@
     }
   }
 
+  &--right {
+
+    &::before,
+    &::after {
+      left: 100%;
+    }
+  }
 }
