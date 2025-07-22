@@ -1132,9 +1132,11 @@ button[aria-label]::before {
   }
 }
 
-.card {
-  display: grid;
-  grid-template-columns: 37.5% auto;
+@media (width > 63.99875rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 37.5% auto;
+  }
 }
 .card__preview, .card__body {
   padding: 5rem;
@@ -1149,13 +1151,18 @@ button[aria-label]::before {
   flex-direction: column;
   justify-content: center;
   padding-left: 0;
-  border-right: var(--border);
   row-gap: clamp(1.25rem, 0.612745098rem + 2.614379085vw, 3.75rem);
+}
+@media (width > 63.99875rem) {
+  .card__preview {
+    border-right: var(--border);
+  }
 }
 @media (width <= 63.99875rem) {
   .card__preview {
     padding-right: 0;
     padding-block: 3.125rem;
+    border-bottom: var(--border);
   }
 }
 .card__preview-main {
@@ -1183,6 +1190,11 @@ button[aria-label]::before {
 .card__grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(0.625rem, 0.306372549rem + 1.3071895425vw, 1.875rem);
+}
+@media (width <= 47.99875rem) {
+  .card__grid--2--cols {
+    grid-template-columns: 1fr;
+  }
 }
 .card__cell {
   display: flex;
