@@ -1101,9 +1101,18 @@ button[aria-label]::before {
 }
 .section__header-inner:has(.section__link) {
   display: grid;
-  grid-template-columns: 1fr auto;
   align-items: center;
   column-gap: 1rem;
+}
+@media (width > 47.99875rem) {
+  .section__header-inner:has(.section__link) {
+    grid-template-columns: 1fr auto;
+  }
+}
+@media (width <= 47.99875rem) {
+  .section__header-inner:has(.section__link) {
+    row-gap: 1.875rem;
+  }
 }
 .section__header-info {
   display: grid;
