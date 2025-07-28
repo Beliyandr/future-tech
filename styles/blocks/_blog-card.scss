@@ -1,1 +1,6 @@
 @use '../helpers/' as *;
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 24% 1fr auto;
+}

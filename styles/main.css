@@ -1237,14 +1237,42 @@ button[aria-label]::before {
   border: var(--border);
   border-radius: 0.5rem;
   font-size: 1.125rem;
+  color: var(--color-grey-60);
+  background-color: transparent;
 }
 @media (width <= 90.06125rem) {
   .tabs__button {
     font-size: 0.875rem;
   }
 }
+@media (any-hover: hover) {
+  .tabs__button:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .tabs__button:active {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
 .tabs__button.is-active {
   background-color: var(--color-dark-10);
+  color: var(--color-light);
+  font-weight: 500;
+  pointer-events: none;
+}
+.tabs__content:not(.is-active) {
+  display: none;
+}
+.tabs__content:focus-visible {
+  outline-offset: -1rem;
+}
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 24% 1fr auto;
 }
 
 /*# sourceMappingURL=main.css.map */
