@@ -28,4 +28,12 @@
     }
 
   }
+
+  &--yellow-eye {
+    &::after {
+      background-image: url('./../../icons/eye.svg');
+    }
+
+  }
+
 }
