@@ -30,7 +30,10 @@
 @use 'blocks/blog-actions';
 @use 'blocks/blog-card';
 
-@use 'blocks/_download-info';
+@use 'blocks/download-info';
+@use 'blocks/rating-view';
+@use 'blocks/review-card';
+@use 'blocks/bordered-grid';
 
 .header,
 footer,
