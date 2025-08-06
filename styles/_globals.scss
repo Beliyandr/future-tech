@@ -9,6 +9,8 @@ html {
 body {
   @include fluid-text(18, 14);
 
+  overflow-x: hidden;
+
   display: flex;
   flex-direction: column;
 

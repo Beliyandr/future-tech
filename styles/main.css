@@ -357,6 +357,7 @@ html.is-lock {
 
 body {
   font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
