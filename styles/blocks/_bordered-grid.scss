@@ -16,36 +16,49 @@
     --itemPaddingX: #{rem(50)};
 
     @include laptop {
-      --itemPaddingX: #{rem(40)}
+      --itemPaddingX: #{rem(40)};
     }
 
-    .bordered-grid__item {
+    @include tablet-above {
+      .bordered-grid__item {
 
-      /*
+        /*
         элементы 1-й и 2-й колонки
       */
-      &:nth-child(3n - 2),
-      &:nth-child(3n - 1) {
-        padding-right: var(--itemPaddingX);
-        border-right: var(--border);
-      }
+        &:nth-child(3n - 2),
+        &:nth-child(3n - 1) {
+          padding-right: var(--itemPaddingX);
+          border-right: var(--border);
+        }
 
-      /*
+        /*
         элементы 2й колонки
       */
-      &:nth-child(3n - 1) {
-        @include full-vw-centered-line(bottom);
-      }
+        &:nth-child(3n - 1) {
+          @include full-vw-centered-line(bottom);
+        }
 
-      /*
+        /*
         элементы 2-й и 3-й колонки
       */
-      &:nth-child(3n - 1),
-      &:nth-child(3n) {
-        padding-left: var(--itemPaddingX);
-      }
+        &:nth-child(3n - 1),
+        &:nth-child(3n) {
+          padding-left: var(--itemPaddingX);
+        }
 
+      }
     }
+
+    @include tablet {
+      --columns: 1;
+
+
+      .bordered-grid__item:not(:last-child) {
+        border-bottom: var(--border);
+      }
+    }
+
+
   }
 
   &__item {

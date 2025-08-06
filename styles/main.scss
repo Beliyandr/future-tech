@@ -35,6 +35,9 @@
 @use 'blocks/review-card';
 @use 'blocks/bordered-grid';
 
+@use 'blocks/about';
+@use 'blocks/about-card';
+
 .header,
 footer,
 main>:not(:last-child) {

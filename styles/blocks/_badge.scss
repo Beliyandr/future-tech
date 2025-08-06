@@ -10,7 +10,7 @@
   border: rem(1) solid transparent;
 
   background: linear-gradient(var(--color-dark-10), var(--color-dark-10)) padding-box,
-    var(--dradient) border-box;
+    var(--gradient) border-box;
 
   @include laptop {
     border-radius: rem(4);
