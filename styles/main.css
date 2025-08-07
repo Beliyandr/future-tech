@@ -1718,4 +1718,28 @@ button[aria-label]::before {
   font-weight: 600;
 }
 
+.hero-alt {
+  padding-top: clamp(2.5rem, 1.0661764706rem + 5.8823529412vw, 8.125rem);
+  padding-bottom: clamp(2.5rem, 0.7475490196rem + 7.1895424837vw, 9.375rem);
+}
+.hero-alt__header-inner {
+  display: grid;
+  gap: 1.25rem 5rem;
+}
+@media (width <= 90.06125rem) {
+  .hero-alt__header-inner {
+    column-gap: 3.75rem;
+  }
+}
+@media (width > 47.99875rem) {
+  .hero-alt__header-inner {
+    grid-template-columns: auto 1fr;
+  }
+}
+@media (width <= 47.99875rem) {
+  .hero-alt__header-inner {
+    row-gap: 1.25rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
