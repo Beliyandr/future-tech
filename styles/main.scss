@@ -43,6 +43,10 @@
 @use 'blocks/news-card';
 @use 'blocks/news';
 
+@use 'blocks/video-player';
+@use 'blocks/video-card';
+
+
 .header,
 footer,
 main>:not(:last-child) {
