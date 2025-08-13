@@ -4,6 +4,8 @@
 @use 'utils';
 @use 'globals';
 
+@use 'blocks/expandeble-content';
+
 @use 'blocks/icon';
 @use 'blocks/logo';
 @use 'blocks/button';
@@ -48,6 +50,8 @@
 
 @use 'blocks/table-of-contents';
 @use 'blocks/blog-details';
+
+
 
 
 .header,
