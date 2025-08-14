@@ -1,11 +1,11 @@
 import pxToRem from './utils/pxToRem.js'
 
-const rootSelector = '[data-js-expandeble-content]'
+const rootSelector = '[data-js-expandable-content]'
 
-class ExpandebleContent {
+class ExpandableContent {
   selectors = {
     root: rootSelector,
-    button: '[data-js-expandeble-content-button]'
+    button: '[data-js-expandable-content-button]'
   }
 
   stateClasses = {
@@ -48,7 +48,7 @@ class ExpandebleContent {
 
 }
 
-class ExpandebleContentCollection {
+class ExpandableContentCollection {
 
   constructor() {
     this.init()
@@ -56,9 +56,9 @@ class ExpandebleContentCollection {
 
   init() {
     document.querySelectorAll(rootSelector).forEach((element) => {
-      new ExpandebleContent(element);
+      new ExpandableContent(element);
     })
   }
 }
 
-export default ExpandebleContentCollection;
+export default ExpandableContentCollection;

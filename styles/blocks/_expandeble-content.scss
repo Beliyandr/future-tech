@@ -1,6 +1,6 @@
 @use '../helpers/' as *;
 
-.expandeble-content {
+.expandable-content {
   --initialMaxHeight: #{rem(500)};
 
   position: relative;
@@ -9,7 +9,7 @@
   &.is-expanded {
 
     &::before,
-    .expandeble-content__button {
+    .expandable-content__button {
       @include hide;
     }
   }
