@@ -12,6 +12,10 @@
       href="./styles/main.css"
     />
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+      defer
+    ></script>
+    <script
       src="./scripts/main.js"
       type="module"
       defer
@@ -348,7 +352,8 @@
                         <input
                           id="phoneNumber"
                           class="field__control"
-                          placeholder="(999) 999-99-99"
+                          placeholder="(+38) 999-999-99-99"
+                          data-js-input-mask="(+38) 000-000-00-00"
                         />
                       </div>
                     </div>
