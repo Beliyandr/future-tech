@@ -348,7 +348,7 @@ svg * {
   translate: 0 -50%;
   content: "";
   right: 0;
-  background: url("../../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
+  background: url("../icons/arrow-top-right_black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
 }
 
@@ -537,13 +537,13 @@ button[aria-label]::before {
   }
 }
 .icon--yellow-arrow::after {
-  background-image: url("./../../icons/arrow-top-rigth_yellow.svg");
+  background-image: url("../icons/arrow-top-rigth_yellow.svg");
 }
 .icon--yellow-eye::after {
-  background-image: url("./../../icons/eye.svg");
+  background-image: url("../icons/eye.svg");
 }
 .icon--gray-arrow-down::after {
-  background-image: url("./../../icons/arrow-down-gray.svg");
+  background-image: url("../icons/arrow-down-gray.svg");
 }
 
 .logo {
@@ -1144,7 +1144,7 @@ button[aria-label]::before {
   grid-area: resources-preview;
   padding-left: 5rem;
   padding-bottom: 5rem;
-  background: url("../../images/resources-preview/bg.png") 0 0/cover no-repeat;
+  background: url("../images/resources-preview/bg.png") 0 0/cover no-repeat;
 }
 @media (width <= 90.06125rem) {
   .hero__resources-preview {
@@ -1162,7 +1162,7 @@ button[aria-label]::before {
     width: 100vw;
     margin-left: calc(var(--container-padding-x) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url("../../images/resources-preview/bg_tablet.png");
+    background-image: url("../images/resources-preview/bg_tablet.png");
     background-size: contain;
   }
 }
@@ -1714,10 +1714,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url("../../icons/star_gray.svg") center/contain no-repeat;
+  background: url("../icons/star_gray.svg") center/contain no-repeat;
 }
 .rating-view__star.is-active {
-  background: url("../../icons/star_yellow.svg") center/contain no-repeat;
+  background: url("../icons/star_yellow.svg") center/contain no-repeat;
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
@@ -2747,7 +2747,7 @@ button[aria-label]::before {
   width: var(--size);
   height: var(--size);
   content: "";
-  background: url(../../icons/arrow-down-white.svg) center/contain no-repeat;
+  background: url(../icons/arrow-down-white.svg) center/contain no-repeat;
   transition-duration: var(--transition-duration);
 }
 @media (width <= 90.06125rem) {
