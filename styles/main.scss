@@ -62,12 +62,3 @@
 @use 'blocks/contacts';
 
 @use 'blocks/select';
-
-
-
-
-.header,
-footer,
-main>:not(:last-child) {
-  // display: none !important;
-}

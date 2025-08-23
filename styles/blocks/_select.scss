@@ -2,6 +2,8 @@
 
 .select {
   &__original-control {
+    min-width: rem(100);
+
     @include mobile-above {
       @include visually-hidden
     }
@@ -12,6 +14,16 @@
 
     @include mobile {
       @include visually-hidden;
+    }
+  }
+
+  &__button,
+  &__option {
+    user-select: none;
+    cursor: pointer;
+
+    * {
+      pointer-events: none;
     }
   }
 
@@ -43,7 +55,7 @@
       transition-duration: var(--transition-duration);
 
       @include laptop {
-        --size: rem(20)
+        --size: #{rem(20)};
       }
     }
   }
@@ -83,5 +95,27 @@
   &__option {
     padding: rem(10);
     border: var(--border);
+    border-radius: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: rem(10);
+
+    @include hover {
+      color: var(--color-accent);
+      background-color: var(--color-dark-15);
+    }
+
+    &.is-selected {
+      color: var(--color-accent);
+
+      &::after {
+        content: '✔';
+      }
+    }
+
+    &.is-current {
+      border-color: var(--color-accent);
+    }
   }
 }

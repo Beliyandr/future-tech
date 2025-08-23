@@ -30,6 +30,10 @@
           height: rem(48);
 
         }
+
+        @include hover {
+          border-color: var(--color-accent);
+        }
       }
     }
   }

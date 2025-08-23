@@ -664,6 +664,16 @@ button[aria-label]::before {
     padding-block: 0.875rem;
   }
 }
+@media (width <= 30.06125rem) {
+  .header__promo {
+    font-size: 0.75rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .header__promo-link .icon {
+    column-gap: 0.3125rem;
+  }
+}
 .header__body {
   padding-block: 1.5rem;
   background-color: var(--color-dark-10);
@@ -791,6 +801,16 @@ button[aria-label]::before {
 @media (width <= 90.06125rem) {
   .soc1als--3-cols .soc1als__link {
     height: 3rem;
+  }
+}
+@media (any-hover: hover) {
+  .soc1als--3-cols .soc1als__link:hover {
+    border-color: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .soc1als--3-cols .soc1als__link:active {
+    border-color: var(--color-accent);
   }
 }
 .soc1als__list {
@@ -940,6 +960,7 @@ button[aria-label]::before {
 .metrics__item {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: start;
   row-gap: 0.625rem;
   padding: 3.125rem;
 }
@@ -1708,13 +1729,13 @@ button[aria-label]::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.5rem;
+  row-gap: 3.75rem;
   max-width: 31.25rem;
   margin-inline: auto;
 }
 @media (width <= 90.06125rem) {
   .review-card {
-    row-gap: 1.875rem;
+    row-gap: 3.125rem;
   }
 }
 .review-card__author {
@@ -2478,6 +2499,9 @@ button[aria-label]::before {
     box-shadow: var(--shadow);
   }
 }
+.field__control:user-invalid {
+  border-color: var(--color-red);
+}
 .field__control::placeholder {
   color: var(--color-dark-40);
 }
@@ -2587,6 +2611,9 @@ button[aria-label]::before {
   color: var(--color-light);
   transition-duration: var(--transition-duration);
 }
+.checkbox__input:user-invalid {
+  border-color: var(--color-red);
+}
 
 .accordion__details[open] .accordion__title::before, .accordion__details[open] .accordion__title::after {
   background-color: var(--color-light);
@@ -2659,6 +2686,9 @@ button[aria-label]::before {
   border-bottom: var(--border);
 }
 
+.select__original-control {
+  min-width: 6.25rem;
+}
 @media (width > 47.99875rem) {
   .select__original-control {
     position: absolute !important;
@@ -2690,6 +2720,13 @@ button[aria-label]::before {
     overflow: hidden !important;
   }
 }
+.select__button, .select__option {
+  user-select: none;
+  cursor: pointer;
+}
+.select__button *, .select__option * {
+  pointer-events: none;
+}
 .select__button {
   display: flex;
   justify-content: space-between;
@@ -2715,7 +2752,7 @@ button[aria-label]::before {
 }
 @media (width <= 90.06125rem) {
   .select__button::after {
-    --size: rem(20) ;
+    --size: 1.25rem;
   }
 }
 .select__dropdown {
@@ -2749,6 +2786,32 @@ button[aria-label]::before {
 .select__option {
   padding: 0.625rem;
   border: var(--border);
+  border-radius: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+@media (any-hover: hover) {
+  .select__option:hover {
+    color: var(--color-accent);
+    background-color: var(--color-dark-15);
+  }
+}
+@media (any-hover: none) {
+  .select__option:active {
+    color: var(--color-accent);
+    background-color: var(--color-dark-15);
+  }
+}
+.select__option.is-selected {
+  color: var(--color-accent);
+}
+.select__option.is-selected::after {
+  content: "✔";
+}
+.select__option.is-current {
+  border-color: var(--color-accent);
 }
 
 /*# sourceMappingURL=main.css.map */
